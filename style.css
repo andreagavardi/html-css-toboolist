@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: lightblue;
+    background-color:#f6f8f9;
 }
 
 /* header-css */
@@ -59,7 +59,7 @@ nav {
 }
 .btn-blue{
     color: white;
-    background-color: rgb(100, 100, 247);
+    background-color: #47adf1;
 }
 .btn-white{
     color: grey;
@@ -82,7 +82,7 @@ nav {
 .btn-blue::after {
   content: "";
   display:inline-block;
-    background-color: rgb(100, 100, 247);
+    background-color: #47adf1;
   height: 100%;
   width: 100%;
   padding: 2px;
@@ -97,7 +97,9 @@ nav {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
+    /* css-bonus ::hover ::after  */
 
+    /* css-sezioni */
 .content{
     width: 80%;
     height: auto;
@@ -121,6 +123,8 @@ span{
     display: block;
     margin-top: 25px;
 }
+
+/* sezione-::before  */
 .true::before{
     content: "\2713";
     color: grey;
@@ -135,4 +139,53 @@ span{
     border-radius: 100%;
     margin-right: 5px;
     padding: 0 3px;
+}
+
+
+.genere::after {
+    content: "";
+    color: white;
+    background-color: red;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 5px;
+
+}
+.editorial::after {
+    content: "Editorial";
+    background-color:  #44abea;
+
+
+}
+
+.goals::after{
+    content: "Q1 Goals";
+    background-color:#ffffff;
+
+}
+
+.recruiting::after{
+    content: "Recruiting";
+    background-color: #64c0a9;
+
+}
+.mobile::after{
+    content: "Mobile";
+    background-color: #f29e33;
+}
+
+.website::after{
+    content: "Website";
+    background-color: #d863a1;
+
+}
+
+.sales::after{
+    content: "Sales";
+    background-color: #b0c92e;
+
 }
