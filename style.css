@@ -3,21 +3,23 @@
     margin: 0;
     padding: 0;
 }
+.bg-white{
+    background-color: white;
+}
 
 body {
     background-color: lightblue;
 }
 
+/* header-css */
 .header-logo {
     height: 80px;
-    background-color: white;
     
 }
 .logo {
     height: 100%;
     padding: 15px 15px;
     line-height: 100%;
-
     vertical-align: middle;
 
 
@@ -27,4 +29,71 @@ body {
     font-weight: 900;
     display: inline-block;
     
+}
+
+/* main-css */
+
+    /* site-nav.css */
+nav {
+   height: 60px;
+   margin: 50px auto;
+   width: 80%;
+   border-radius: 5px;
+   
+}
+.container{
+    padding: 15px 15px;
+
+}
+.btn {
+    display: inline-block;
+    height: auto;
+  width: auto;
+  padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 100%;
+    vertical-align: middle;
+    position: relative;
+}
+.btn-blue{
+    color: white;
+    background-color: rgb(100, 100, 247);
+}
+.btn-white{
+    color: grey;
+    border: 1px solid grey;
+}
+
+    /* css-bonus ::hover ::after  */
+
+.btn:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5)
+
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); 
+}
+
+.btn-blue::after {
+  content: "";
+  display:inline-block;
+    background-color: rgb(100, 100, 247);
+  height: 100%;
+  width: 100%;
+  padding: 2px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn-blue:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
