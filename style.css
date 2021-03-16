@@ -162,9 +162,9 @@ span{
 
 }
 
-.goals::after{
+.goals::after {
     content: "Q1 Goals";
-    background-color:#ffffff;
+    background-color:#9c72e4;
 
 }
 
