@@ -111,8 +111,6 @@ section{
 }
 
 
-
-}
 h2::before{
     display: inline-block;
     content: "\0025BE";
@@ -123,4 +121,18 @@ span{
     display: block;
     margin-top: 25px;
 }
-
+.true::before{
+    content: "\2713";
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+.false::before{
+    content: "\2613";
+    color: red;
+    border: 1px solid red;
+    border-radius: 100%;
+    margin-right: 5px;
+    padding: 0 3px;
+}
