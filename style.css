@@ -36,20 +36,20 @@ body {
     /* site-nav.css */
 nav {
    height: 60px;
-   margin: 50px auto;
+   margin: 50px auto 0;
    width: 80%;
    border-radius: 5px;
    
 }
 .container{
-    padding: 15px 15px;
+    padding: 15px 50px;
 
 }
 .btn {
     display: inline-block;
     height: auto;
-  width: auto;
-  padding: 8px;
+    width: auto;
+    padding: 8px;
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
@@ -97,3 +97,30 @@ nav {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
+
+.content{
+    width: 80%;
+    height: auto;
+    padding: 50px 50px;
+    margin: 1px auto 10px;
+    border-radius: 5px;
+}
+
+section{
+    margin-bottom: 30px;
+}
+
+
+
+}
+h2::before{
+    display: inline-block;
+    content: "\0025BE";
+    padding-right: 5px;
+    font-size: 15px;
+}
+span{
+    display: block;
+    margin-top: 25px;
+}
+
